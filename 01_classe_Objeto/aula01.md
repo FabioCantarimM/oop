@@ -12,6 +12,7 @@ Uma **classe** é uma estrutura que define os atributos (dados) e métodos (fun�
         
     *   A classe pode conter um **construtor** (\_\_init\_\_), atributos e métodos.
 
+
 `
     class Pessoa: 
         pass # Classe vazia
@@ -96,6 +97,31 @@ Os atributos e métodos podem ter diferentes níveis de visibilidade:
 
 ### **Exemplo Completo: Criando uma Classe Completa**
 
-Plain textANTLR4BashCC#CSSCoffeeScriptCMakeDartDjangoDockerEJSErlangGitGoGraphQLGroovyHTMLJavaJavaScriptJSONJSXKotlinLaTeXLessLuaMakefileMarkdownMATLABMarkupObjective-CPerlPHPPowerShell.propertiesProtocol BuffersPythonRRubySass (Sass)Sass (Scss)SchemeSQLShellSwiftSVGTSXTypeScriptWebAssemblyYAMLXML`   class Pessoa:      especie = "Humano"  # Atributo de classe      def __init__(self, nome, idade):          self.nome = nome  # Atributo de instância          self.idade = idade      def apresentar(self):  # Método de instância          return f"Olá, meu nome é {self.nome} e tenho {self.idade} anos."      @classmethod      def mudar_especie(cls, nova_especie):          cls.especie = nova_especie      @staticmethod      def boas_vindas():          return "Bem-vindo à classe Pessoa!"  # Usando a classe  print(Pessoa.boas_vindas())  # Método estático  pessoa1 = Pessoa("Ana", 28)  print(pessoa1.apresentar())  # Olá, meu nome é Ana e tenho 28 anos.  Pessoa.mudar_especie("Homo Sapiens")  print(Pessoa.especie)  # Homo Sapiens   `
+`   
+class Pessoa:      
+    especie = "Humano"  # Atributo de classe      
+    
+    def __init__(self, nome, idade):          
+    self.nome = nome  # Atributo de instância          
+    self.idade = idade      
+    
+    def apresentar(self):  # Método de instância          
+        return f"Olá, meu nome é {self.nome} e tenho {self.idade} anos."      
+        
+    @classmethod      
+    def mudar_especie(cls, nova_especie):          
+        cls.especie = nova_especie      
+    
+    @staticmethod      
+    def boas_vindas():          
+        return "Bem-vindo à classe Pessoa!" 
+        
+     # Usando a classe  
+     print(Pessoa.boas_vindas())  
+     # Método estático  
+     pessoa1 = Pessoa("Ana", 28)  
+     print(pessoa1.apresentar())  # Olá, meu nome é Ana e tenho 28 anos.  
+     Pessoa.mudar_especie("Homo Sapiens")  
+     print(Pessoa.especie)  # Homo Sapiens
 
 Esse aprofundamento cobre a **definição de classe**, **atributos**, **métodos** e as práticas mais comuns.
