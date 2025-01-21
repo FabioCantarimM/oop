@@ -30,7 +30,6 @@ A OOP é um paradigma de programação que organiza o código em torno de **obje
         
     pessoa1 = Pessoa()  
     print(type(pessoa1))  # <class '__main__.Pessoa'>
-` 
 
 ### **2\. Atributos e Métodos**
 
@@ -51,7 +50,6 @@ class Pessoa:
     # Criando um objeto  
     pessoa1 = Pessoa("João", 30)  
     pessoa1.apresentar()  # Olá, meu nome é João e tenho 30 anos.   
-`
 
 ### **3\. Encapsulamento**
 
@@ -78,7 +76,6 @@ class ContaBancaria:
     conta = ContaBancaria("Maria", 500)  
     conta.depositar(200)  
     print(conta._mostrar_saldo())  # Saldo: R$700   
-`
 
 ### **4\. Herança**
 
@@ -105,7 +102,6 @@ class Animal:
     cat = Gato("Luna")  
     print(dog.falar())  # Rex diz: Au au!  
     print(cat.falar())  # Luna diz: Miau!   
-`
 
 ### **5\. Polimorfismo**
 
@@ -119,7 +115,6 @@ O polimorfismo permite que diferentes objetos usem o mesmo método de maneira es
         
     # Rex diz: Au au!  
     # Luna diz: Miau!   
-`
 
 ### **Resumo**
 

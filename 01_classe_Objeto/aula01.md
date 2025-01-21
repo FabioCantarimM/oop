@@ -4,19 +4,35 @@ Uma **classe** é uma estrutura que define os atributos (dados) e métodos (fun�
 
 ### **Detalhes Importantes sobre Classe e Objeto**
 
-1.  class Pessoa: pass # Classe vazia
+1.  Definição de Classe
     
     *   As classes são definidas com a palavra-chave class.
         
     *   O nome da classe segue a convenção CamelCase (primeira letra maiúscula).
         
     *   A classe pode conter um **construtor** (\_\_init\_\_), atributos e métodos.
+
+`
+    class Pessoa: 
+        pass # Classe vazia
         
-2.  \# Criando uma classe básicaclass Pessoa: def \_\_init\_\_(self, nome, idade): self.nome = nome # Atributo de instância self.idade = idade# Criando um objetopessoa1 = Pessoa("João", 25)pessoa2 = Pessoa("Ana", 30)print(pessoa1.nome) # Joãoprint(pessoa2.idade) # 30
+2.  Criação de Objeto
     
     *   Para criar um objeto, chamamos o nome da classe como se fosse uma função.
         
     *   O Python chama automaticamente o método especial \_\_init\_\_ (se ele existir) ao criar um objeto.
+
+`
+#Criando uma classe básica
+class Pessoa: 
+    def \_\_init\_\_(self, nome, idade): 
+        self.nome = nome # Atributo de instância 
+        self.idade = idade
+        
+# Criando um objetopessoa1 = Pessoa("João", 25)
+pessoa2 = Pessoa("Ana", 30)
+print(pessoa1.nome) # João
+print(pessoa2.idade) # 30
         
 
 ### **Atributos**
@@ -82,4 +98,4 @@ Os atributos e métodos podem ter diferentes níveis de visibilidade:
 
 Plain textANTLR4BashCC#CSSCoffeeScriptCMakeDartDjangoDockerEJSErlangGitGoGraphQLGroovyHTMLJavaJavaScriptJSONJSXKotlinLaTeXLessLuaMakefileMarkdownMATLABMarkupObjective-CPerlPHPPowerShell.propertiesProtocol BuffersPythonRRubySass (Sass)Sass (Scss)SchemeSQLShellSwiftSVGTSXTypeScriptWebAssemblyYAMLXML`   class Pessoa:      especie = "Humano"  # Atributo de classe      def __init__(self, nome, idade):          self.nome = nome  # Atributo de instância          self.idade = idade      def apresentar(self):  # Método de instância          return f"Olá, meu nome é {self.nome} e tenho {self.idade} anos."      @classmethod      def mudar_especie(cls, nova_especie):          cls.especie = nova_especie      @staticmethod      def boas_vindas():          return "Bem-vindo à classe Pessoa!"  # Usando a classe  print(Pessoa.boas_vindas())  # Método estático  pessoa1 = Pessoa("Ana", 28)  print(pessoa1.apresentar())  # Olá, meu nome é Ana e tenho 28 anos.  Pessoa.mudar_especie("Homo Sapiens")  print(Pessoa.especie)  # Homo Sapiens   `
 
-Esse aprofundamento cobre a **definição de classe**, **atributos**, **métodos** e as práticas mais comuns. Se desejar, podemos explorar cenários mais avançados!
+Esse aprofundamento cobre a **definição de classe**, **atributos**, **métodos** e as práticas mais comuns.
