@@ -97,31 +97,32 @@ Os atributos e métodos podem ter diferentes níveis de visibilidade:
 
 ### **Exemplo Completo: Criando uma Classe Completa**
 
+
 `   
-class Pessoa:      
-    especie = "Humano"  # Atributo de classe      
+    class Pessoa:      
+        especie = "Humano"  # Atributo de classe    
     
-    def __init__(self, nome, idade):          
-    self.nome = nome  # Atributo de instância          
-    self.idade = idade      
-    
-    def apresentar(self):  # Método de instância          
-        return f"Olá, meu nome é {self.nome} e tenho {self.idade} anos."      
+        def __init__(self, nome, idade):          
+        self.nome = nome  # Atributo de instância          
+        self.idade = idade      
         
-    @classmethod      
-    def mudar_especie(cls, nova_especie):          
-        cls.especie = nova_especie      
-    
-    @staticmethod      
-    def boas_vindas():          
-        return "Bem-vindo à classe Pessoa!" 
+        def apresentar(self):  # Método de instância          
+            return f"Olá, meu nome é {self.nome} e tenho {self.idade} anos."      
+            
+        @classmethod      
+        def mudar_especie(cls, nova_especie):          
+            cls.especie = nova_especie      
         
-     # Usando a classe  
-     print(Pessoa.boas_vindas())  
-     # Método estático  
-     pessoa1 = Pessoa("Ana", 28)  
-     print(pessoa1.apresentar())  # Olá, meu nome é Ana e tenho 28 anos.  
-     Pessoa.mudar_especie("Homo Sapiens")  
-     print(Pessoa.especie)  # Homo Sapiens
+        @staticmethod      
+        def boas_vindas():          
+            return "Bem-vindo à classe Pessoa!" 
+            
+        # Usando a classe  
+        print(Pessoa.boas_vindas())  
+        # Método estático  
+        pessoa1 = Pessoa("Ana", 28)  
+        print(pessoa1.apresentar())  # Olá, meu nome é Ana e tenho 28 anos.  
+        Pessoa.mudar_especie("Homo Sapiens")  
+        print(Pessoa.especie)  # Homo Sapiens
 
 Esse aprofundamento cobre a **definição de classe**, **atributos**, **métodos** e as práticas mais comuns.
