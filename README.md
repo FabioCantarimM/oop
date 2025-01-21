@@ -23,13 +23,14 @@ A OOP é um paradigma de programação que organiza o código em torno de **obje
 *   **Objeto**: É uma instância de uma classe.
     
 
-`
+```python
 # Criando uma classe  
     class Pessoa:
         pass  # Criando um objeto da classe  
         
     pessoa1 = Pessoa()  
     print(type(pessoa1))  # <class '__main__.Pessoa'>
+```
 
 ### **2\. Atributos e Métodos**
 
@@ -50,6 +51,7 @@ class Pessoa:
     # Criando um objeto  
     pessoa1 = Pessoa("João", 30)  
     pessoa1.apresentar()  # Olá, meu nome é João e tenho 30 anos.   
+```
 
 ### **3\. Encapsulamento**
 
