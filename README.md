@@ -38,7 +38,7 @@ A OOP é um paradigma de programação que organiza o código em torno de **obje
 *   **Métodos**: São funções definidas dentro de uma classe para manipular atributos ou realizar ações.
     
 
-`   
+```python
 class Pessoa:      
     def __init__(self, nome, idade):
             self.nome = nome  # Atributo          
@@ -62,7 +62,7 @@ O encapsulamento protege os dados de um objeto contra acessos indevidos, permiti
 *   **Privado**: Sinalizado com \_\_ (ex.: self.\_\_salario).
     
 
-`   
+```python 
 class ContaBancaria:
     def __init__(self, titular, saldo):          
         self.titular = titular  # Público          
@@ -76,12 +76,13 @@ class ContaBancaria:
     conta = ContaBancaria("Maria", 500)  
     conta.depositar(200)  
     print(conta._mostrar_saldo())  # Saldo: R$700   
+```
 
 ### **4\. Herança**
 
 A herança permite que uma classe herde atributos e métodos de outra classe, promovendo o reuso de código.
 
-`   
+```python 
 class Animal:
     def __init__(self, nome):          
         self.nome = nome      
@@ -102,12 +103,13 @@ class Animal:
     cat = Gato("Luna")  
     print(dog.falar())  # Rex diz: Au au!  
     print(cat.falar())  # Luna diz: Miau!   
+```
 
 ### **5\. Polimorfismo**
 
 O polimorfismo permite que diferentes objetos usem o mesmo método de maneira específica para cada classe.
 
-`   
+```python 
     animais = [Cachorro("Rex"), Gato("Luna")]  
     
     for animal in animais:      
@@ -115,6 +117,7 @@ O polimorfismo permite que diferentes objetos usem o mesmo método de maneira es
         
     # Rex diz: Au au!  
     # Luna diz: Miau!   
+```
 
 ### **Resumo**
 
