@@ -23,7 +23,8 @@ A OOP é um paradigma de programação que organiza o código em torno de **obje
 *   **Objeto**: É uma instância de uma classe.
     
 
-`# Criando uma classe  
+`
+# Criando uma classe  
     class Pessoa:
         pass  # Criando um objeto da classe  
         
@@ -38,7 +39,8 @@ A OOP é um paradigma de programação que organiza o código em torno de **obje
 *   **Métodos**: São funções definidas dentro de uma classe para manipular atributos ou realizar ações.
     
 
-`   class Pessoa:      
+`   
+class Pessoa:      
     def __init__(self, nome, idade):
             self.nome = nome  # Atributo          
             self.idade = idade  # Atributo      
@@ -62,8 +64,9 @@ O encapsulamento protege os dados de um objeto contra acessos indevidos, permiti
 *   **Privado**: Sinalizado com \_\_ (ex.: self.\_\_salario).
     
 
-`   class ContaBancaria:
-      def __init__(self, titular, saldo):          
+`   
+class ContaBancaria:
+    def __init__(self, titular, saldo):          
         self.titular = titular  # Público          
         self._saldo = saldo  # Protegido      
         def depositar(self, valor):          
@@ -81,8 +84,9 @@ O encapsulamento protege os dados de um objeto contra acessos indevidos, permiti
 
 A herança permite que uma classe herde atributos e métodos de outra classe, promovendo o reuso de código.
 
-`   class Animal:
-      def __init__(self, nome):          
+`   
+class Animal:
+    def __init__(self, nome):          
         self.nome = nome      
     
     def falar(self):          
