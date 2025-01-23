@@ -69,7 +69,8 @@ class ContaBancaria:
     def __init__(self, titular, saldo):          
         self.titular = titular  # Público          
         self._saldo = saldo  # Protegido      
-        def depositar(self, valor):          
+    
+    def depositar(self, valor):          
         self._saldo += valor      
     
     def _mostrar_saldo(self):  # Método protegido         

@@ -36,6 +36,12 @@ class Usuario:
     def log_geral(self, nome, email, senha):
         print(f"O usuário {nome} está logado com o email {email} e senha {senha}")
 
+    def solicitar_alteracao_senha(self, senha):
+        self._alterar_senha(senha)
+
+    def _alterar_senha(self, senha):
+        self.__senha = senha
+
 pessoa1 = Usuario()
 pessoa1.set_nome(nome="João")
 pessoa1.set_email(email="joao@a.com")
