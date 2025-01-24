@@ -1,0 +1,1 @@
+docker run --name postgres-container -e POSTGRES_USER=root -e POSTGRES_PASSWORD=12345root6789 -e POSTGRES_DB=meu_banco -p 5432:5432 -d postgres

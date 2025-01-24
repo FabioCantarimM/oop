@@ -1,0 +1,7 @@
+{
+    "id": 101,
+    "produto": "arroz",
+    "preco": 10,
+    "quantidade": 100,
+    "centro_distribuicao": "centro_01"
+}
