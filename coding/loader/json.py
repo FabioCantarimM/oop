@@ -1,8 +1,9 @@
+from coding.loader.loader import Loader
 import os
 import json
 import pandas as pd
 
-class JSONFileReader:
+class JSONFileReader(Loader):
     def __init__(self, folder_path):
         """
         Inicializa o leitor de arquivos JSON em uma pasta específica.
@@ -81,3 +82,5 @@ class JSONFileReader:
             return pd.concat(all_dataframes, ignore_index=True)
         else:
             return pd.DataFrame()  # Retorna um DataFrame vazio se nenhum JSON for processado
+
+    

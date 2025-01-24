@@ -31,13 +31,20 @@ try:
     csv_reader = CSVFileReader(folder_csv)
     csv_all_dataframes = csv_reader.all_csvs_to_dataframe()
 
-    db.save_dataframe_to_table(csv_all_dataframes,"produto", if_exists="append")
+    max_preco, min_preco = csv_reader.calcular_KPI(csv_all_dataframes, "preco")
+
+    # db.save_dataframe_to_table(csv_all_dataframes,"produto", if_exists="append")
 
     json_reader = JSONFileReader(folder_json)
     json_all_dataframes = json_reader.all_jsons_to_dataframe()
 
-    db.save_dataframe_to_table(json_all_dataframes,"produto", if_exists="append")
+    max_preco_json, min_preco_json = json_reader.calcular_KPI(json_all_dataframes, "preco")
 
+    total_estoque_csv = csv_reader.somar_tudo(csv_all_dataframes, "quantidade")
+    total_estoque_json = json_reader.somar_tudo(json_all_dataframes, "quantidade")
+
+    # db.save_dataframe_to_table(json_all_dataframes,"produto", if_exists="append")
+    print('stop')
 except Exception as e:
     print(e)
 finally:

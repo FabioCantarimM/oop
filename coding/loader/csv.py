@@ -1,8 +1,9 @@
+from coding.loader.loader import Loader
 import os
 import csv
 import pandas as pd
 
-class CSVFileReader:
+class CSVFileReader(Loader):
     def __init__(self, folder_path):
         """
         Inicializa o leitor de arquivos CSV em uma pasta específica.
